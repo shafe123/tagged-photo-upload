@@ -16,6 +16,12 @@ class EntityDetector(private val context: Context) {
     
     private val configManager = ConfigManager(context)
     
+    companion object {
+        // Similarity threshold for face matching (0.0 to 1.0)
+        // Higher values require more similarity, lower values are more permissive
+        private const val FACE_SIMILARITY_THRESHOLD = 0.7f
+    }
+    
     // Configure face detector for better accuracy
     private val faceDetectorOptions = FaceDetectorOptions.Builder()
         .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_ACCURATE)
@@ -111,8 +117,7 @@ class EntityDetector(private val context: Context) {
                                                          referenceFace.boundingBox.width().toFloat(),
                                                          referenceFace.boundingBox.height().toFloat())
             
-            val threshold = 0.7f // 70% similarity threshold
-            val isMatch = similarityScore > threshold
+            val isMatch = similarityScore > FACE_SIMILARITY_THRESHOLD
             
             Log.d("EntityDetector", "Face similarity score: $similarityScore, Match: $isMatch")
             return isMatch

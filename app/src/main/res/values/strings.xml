@@ -31,4 +31,5 @@
     <string name="clear_reference">Clear Reference</string>
     <string name="config_saved">Configuration saved successfully</string>
     <string name="config_error">Error saving configuration</string>
+    <string name="reference_entity_set">Reference entity set</string>
 </resources>

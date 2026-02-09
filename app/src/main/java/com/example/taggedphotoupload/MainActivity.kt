@@ -319,7 +319,7 @@ class MainActivity : AppCompatActivity() {
             val bitmap = BitmapFactory.decodeFile(referenceImagePath)
             if (bitmap != null) {
                 referenceImageView.setImageBitmap(bitmap)
-                referenceLabel.text = "Reference entity set"
+                referenceLabel.text = getString(R.string.reference_entity_set)
             } else {
                 referenceImageView.setImageResource(0)
                 referenceLabel.text = getString(R.string.no_reference_set)

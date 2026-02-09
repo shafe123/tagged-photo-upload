@@ -49,10 +49,10 @@ class PhotoMonitorWorker(
             // For this simplified version, we'll just log that monitoring is active
             Log.d("PhotoMonitorWorker", "Photo monitoring check completed")
             
-            Result.success()
+            return Result.success()
         } catch (e: Exception) {
             Log.e("PhotoMonitorWorker", "Error in photo monitoring", e)
-            Result.retry()
+            return Result.retry()
         }
     }
     
