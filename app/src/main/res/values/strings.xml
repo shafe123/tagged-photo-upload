@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tagged Photo Upload</string>
+    <string name="setup_title">Setup Azure Storage</string>
+    <string name="azure_account_name">Azure Storage Account Name</string>
+    <string name="azure_account_key">Azure Account Key</string>
+    <string name="azure_container_name">Container Name</string>
+    <string name="save_config">Save Configuration</string>
+    <string name="select_reference_image">Select Reference Image</string>
+    <string name="capture_reference_image">Capture Reference Image</string>
+    <string name="start_monitoring">Start Monitoring</string>
+    <string name="stop_monitoring">Stop Monitoring</string>
+    <string name="monitoring_active">Photo monitoring is active</string>
+    <string name="monitoring_inactive">Photo monitoring is inactive</string>
+    <string name="upload_status">Upload Status</string>
+    <string name="no_uploads">No photos uploaded yet</string>
+    <string name="permission_required">Permissions Required</string>
+    <string name="permission_message">This app needs camera and storage permissions to detect and upload photos.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="setup_required">Setup Required</string>
+    <string name="setup_message">Please configure Azure Storage settings before starting.</string>
+    <string name="go_to_setup">Go to Setup</string>
+    <string name="reference_entity_label">Reference Entity</string>
+    <string name="no_reference_set">No reference image set</string>
+    <string name="upload_count">Photos uploaded: %1$d</string>
+    <string name="entity_detected">Entity detected in photo</string>
+    <string name="uploading_photo">Uploading photo to Azure...</string>
+    <string name="upload_success">Photo uploaded successfully</string>
+    <string name="upload_failed">Failed to upload photo</string>
+    <string name="detection_threshold">Detection Similarity Threshold</string>
+    <string name="clear_reference">Clear Reference</string>
+    <string name="config_saved">Configuration saved successfully</string>
+    <string name="config_error">Error saving configuration</string>
+</resources>
