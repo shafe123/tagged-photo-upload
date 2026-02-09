@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monitoring_inactive"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        android:layout_marginTop="24dp" />
+
+    <ImageView
+        android:id="@+id/referenceImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#E0E0E0"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/reference_entity_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statusLabel"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/referenceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_reference_set"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/referenceImageView"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/referenceLabel">
+
+        <Button
+            android:id="@+id/selectReferenceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_reference_image"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/captureReferenceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capture_reference_image"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/clearReferenceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_reference"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/setupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setup_title"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/toggleMonitoringButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_monitoring" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/uploadCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_uploads"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLayout"
+        android:layout_marginTop="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
